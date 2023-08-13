@@ -25,7 +25,7 @@ app.get("/api/hello", function (req, res) {
 });
 
 app.get("/api/whoami", function (req, res) {
-  let ipAddress;
+  let ipaddress;
   let language;
   let software;
 
@@ -43,19 +43,14 @@ app.get("/api/whoami", function (req, res) {
       ? forwardedForHeaderName.split(",")
       : [];
 
-    ipAddress = splittedIps.length
+    ipaddress = splittedIps.length
       ? splittedIps[0]
       : realIpHeaderName
       ? realIpHeaderName
       : req.connection.remoteAddress;
   }
 
-  console.log("ipAddress is: ", ipAddress);
-  console.log("remoteAddress ipAddress is: ", req.connection.remoteAddress);
-  console.log("language is: ", language);
-  console.log("software is: ", software);
-
-  res.json({ ipAddress, language, software });
+  res.json({ ipaddress, language, software });
 });
 
 // listen for requests :)
