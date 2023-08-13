@@ -1,7 +1,7 @@
 {
-  "name": "request-header-parser-microservice",
+  "name": "request-header-parser",
   "version": "0.0.2",
-  "description": "API project for freeCodeCamp",
+  "description": "Head parser microservice",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -21,7 +21,9 @@
   "homepage": "https://github.com/freeCodeCamp/boilerplate-project-headerparser#readme",
   "author": "freeCodeCamp <team@freecodecamp.org>",
   "keywords": [
-    "freeCodeCamp",
+    "Sarthak014",
+    "microservice",
+    "headparser",
     "node",
     "express"
   ],
